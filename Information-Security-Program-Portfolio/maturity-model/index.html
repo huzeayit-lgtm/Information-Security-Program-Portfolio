@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Program Maturity Model</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px; background: #f5f7fb; color: #1f2937; }
+    header { margin-bottom: 24px; }
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    p { margin: 0; color: #4b5563; }
+    .controls { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06); padding: 20px; }
+    .card table { width: 100%; border-collapse: collapse; }
+    .card th, .card td { text-align: left; padding: 12px 10px; border-bottom: 1px solid #e5e7eb; }
+    .card th { background: #f3f4f6; color: #111827; }
+    .status-pill { display: inline-flex; padding: 4px 10px; border-radius: 999px; font-size: 0.85rem; color: #fff; }
+    .status-1 { background: #ef4444; }
+    .status-2 { background: #f59e0b; }
+    .status-3 { background: #10b981; }
+    .status-4 { background: #3b82f6; }
+    .status-5 { background: #8b5cf6; }
+    footer { margin-top: 32px; color: #6b7280; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Information Security Maturity Model</h1>
+    <p>View maturity levels, control categories, and recommended improvements for your security program.</p>
+  </header>
+
+  <div class="card">
+    <div class="controls">
+      <label>
+        Category
+        <select id="categorySelect">
+          <option value="all">All categories</option>
+        </select>
+      </label>
+      <label>
+        Level
+        <select id="levelSelect">
+          <option value="all">All levels</option>
+          <option value="1">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+          <option value="4">Level 4</option>
+          <option value="5">Level 5</option>
+        </select>
+      </label>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Level</th>
+          <th>Description</th>
+          <th>Key Outcomes</th>
+        </tr>
+      </thead>
+      <tbody id="maturityTableBody">
+        <tr><td colspan="4">Loading maturity model...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Data is sourced from the maturity model JSON and rendered dynamically in the browser.</p>
+  </footer>
+
+  <script src="maturity.js"></script>
+</body>
+</html>

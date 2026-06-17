@@ -1,0 +1,35 @@
+{
+  "modelName": "Information Security Program Maturity",
+  "categories": [
+    {
+      "name": "Governance",
+      "levels": [
+        { "level": 1, "description": "Ad hoc security policy and roles are undefined.", "outcome": "Security is reactive and not aligned to business objectives." },
+        { "level": 2, "description": "Basic security policies exist, with limited oversight.", "outcome": "Some controls are defined, but ownership is inconsistent." },
+        { "level": 3, "description": "Formal governance processes are established and repeatable.", "outcome": "Security decisions are documented and reviewed." },
+        { "level": 4, "description": "Governance is integrated across business units with metrics.", "outcome": "Risk management informs strategic planning." },
+        { "level": 5, "description": "Governance is optimized, continuously improving, and benchmarked.", "outcome": "Security is a business enabler and measured proactively." }
+      ]
+    },
+    {
+      "name": "Risk Management",
+      "levels": [
+        { "level": 1, "description": "Risk is identified informally and inconsistently.", "outcome": "Potential threats are not systematically assessed." },
+        { "level": 2, "description": "Basic risk assessments are completed for key assets.", "outcome": "Some risks are tracked, but mitigation is ad hoc." },
+        { "level": 3, "description": "Risk management processes are defined and repeatable.", "outcome": "Risk registers and treatment plans are maintained." },
+        { "level": 4, "description": "Risk decisions are driven by quantitative and qualitative data.", "outcome": "Risk posture is reviewed regularly by leadership." },
+        { "level": 5, "description": "Risk management is embedded across programs and continuously monitored.", "outcome": "Risks are proactively reduced through strategic controls." }
+      ]
+    },
+    {
+      "name": "Incident Response",
+      "levels": [
+        { "level": 1, "description": "Incident response is informal with no documented plan.", "outcome": "Response is slow and inconsistent." },
+        { "level": 2, "description": "A basic incident response plan exists and is occasionally used.", "outcome": "Incidents are handled, but lessons learned are limited." },
+        { "level": 3, "description": "IR playbooks and communication plans are defined.", "outcome": "Response is coordinated and documented." },
+        { "level": 4, "description": "Response workflows are tested, measured, and improved.", "outcome": "Recovery times are reduced and stakeholders are informed promptly." },
+        { "level": 5, "description": "Incident response is mature with automated detection and adaptive learning.", "outcome": "The organization recovers rapidly and evolves from every event." }
+      ]
+    }
+  ]
+}
