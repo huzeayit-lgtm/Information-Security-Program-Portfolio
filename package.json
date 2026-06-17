@@ -1,0 +1,20 @@
+{
+  "name": "mcp-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "pnpm": "^8.0.0",
+    "vitest": "^1.0.0"
+  },
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "build": "pnpm -w -r run build --silent",
+    "build:all": "pnpm -w -r run build",
+    "test": "pnpm -w -r run test --silent",
+    "demo": "node packages/mcp-client/dist/examples/demo.js"
+  }
+}
