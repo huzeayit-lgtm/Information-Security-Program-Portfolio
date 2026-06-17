@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Security Dashboard</title>
+  <style>
+    body{font-family:system-ui,sans-serif;padding:24px;background:#f7f9fc;color:#0f172a}
+    h1{margin:0 0 8px}
+    .card{background:#fff;padding:16px;border-radius:12px;border:1px solid #e6eef8}
+    .controls{display:flex;gap:12px;margin-top:12px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;border-bottom:1px solid #eef2f7;text-align:left}
+  </style>
+</head>
+<body>
+  <h1>AI Security — Risk Dashboard</h1>
+  <p>Overview of AI-specific risks and control status.</p>
+
+  <div class="card">
+    <div class="controls">
+      <label>Severity
+        <select id="severitySelect"><option value="all">All</option><option value="low">Low</option><option value="medium">Medium</option><option value="high">High</option></select>
+      </label>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Control</th><th>Risk</th><th>Severity</th><th>Status</th></tr>
+      </thead>
+      <tbody id="aiTableBody"><tr><td colspan="4">Loading AI controls...</td></tr></tbody>
+    </table>
+  </div>
+
+  <script src="ai-risk-dashboard.js"></script>
+</body>
+</html>

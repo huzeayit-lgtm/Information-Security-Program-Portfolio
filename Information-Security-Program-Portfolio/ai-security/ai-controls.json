@@ -1,0 +1,9 @@
+{
+  "model": "AI Security Controls",
+  "controls": [
+    {"id":"AI-001","control":"Model Inventory","risk":"Unknown models in production","severity":"high","status":"partial"},
+    {"id":"AI-002","control":"Data Provenance","risk":"Untrusted training data","severity":"high","status":"planned"},
+    {"id":"AI-003","control":"Explainability","risk":"Opaque model decisions","severity":"medium","status":"partial"},
+    {"id":"AI-004","control":"Access Controls","risk":"Unauthorized model access","severity":"high","status":"operational"}
+  ]
+}
