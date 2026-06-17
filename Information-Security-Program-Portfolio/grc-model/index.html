@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GRC Model</title>
+  <style>
+    body{font-family:system-ui,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+    h1{margin:0 0 8px}
+    .card{background:#fff;padding:16px;border-radius:12px;border:1px solid #e6eef8}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;border-bottom:1px solid #eef2f7;text-align:left}
+    th{background:#f1f5f9}
+  </style>
+</head>
+<body>
+  <h1>GRC Model</h1>
+  <p>Governance, Risk & Compliance controls and lifecycle.</p>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th>Control</th><th>Category</th><th>Lifecycle Stage</th><th>Description</th></tr>
+      </thead>
+      <tbody id="controlsBody">
+        <tr><td colspan="4">Loading controls...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="lifecycle.js"></script>
+</body>
+</html>

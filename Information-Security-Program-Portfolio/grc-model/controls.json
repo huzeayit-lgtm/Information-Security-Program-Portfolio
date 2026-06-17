@@ -1,0 +1,8 @@
+{
+  "modelName": "GRC Controls",
+  "controls": [
+    { "id": "GOV-001", "name": "Security Policy", "category": "Governance", "stage": "Define", "description": "Formal security policy documented and approved by leadership." },
+    { "id": "RISK-001", "name": "Asset Inventory", "category": "Risk Management", "stage": "Identify", "description": "Inventory of critical assets and data flows." },
+    { "id": "CTRL-001", "name": "Access Reviews", "category": "Controls", "stage": "Operate", "description": "Periodic access reviews and recertification." }
+  ]
+}
